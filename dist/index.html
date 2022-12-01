@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.07626c30.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">Question Answer Flow Designer</a>
+        <div class="navbar-nav">
+            <div class="nav-item text-nowrap">
+                <a class="nav-link px-3" href="#">Sign out</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="rf-qna-flow">
+        <div class="rf-qna-flow-left-bar">
+            <div class="rf-qna-flow-left-bar-toggler">
+            </div>
+            <div class="rf-qna-flow-left-bar-content">
+                <div class="element-container">
+                    <!-- <button id="addElement">Add element</button>
+                    <button id="addLink">Add link</button> -->
+                    <!-- <div id="cursor-coordinates">
+                        <label for="x-axis">X:</label>
+                        <p id="x-axis"></p>
+                        <label for="y-axis">Y:</label>
+                        <p id="y-axis"></p>
+                    </div> -->
+                    <div>
+                        <button id="saveGraph">Save</button>
+                        <button id="scaleToFit">Scale to fit</button>
+                        <button id="autoArrange">Auto arrange</button>
+                    </div>
+                    <div class="stencil"></div>
+                </div>
+            </div>
+        </div>
+        <div class="rf-qna-flow-container">
+            <div class="rf-qna-flow-toolbar"></div>
+            <!-- <div class="rf-qna-flow-paper"></div> -->
+        </div>
+        <div class="rf-qna-flow-right-bar rf-qna-flow-right-bar-toggler-collapsed">
+            <div class="rf-qna-flow-right-bar-toggler">
+            </div>
+            <div class="rf-qna-flow-right-bar-content">
+                <div class="col-12">
+                    <form>
+                        <label for="element-topic">Text</label>
+                        <!-- <input id="element-text"> -->
+                        <textarea id="element-topic" name="story" rows="5" cols="27.5"></textarea>
+
+                        <label for="element-coordinates">Coordinates</label>
+                        <textarea id="element-coordinates" rows="5" cols="27.5"></textarea>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="set-link-modal">
+        <!-- Modal content -->
+        <div class="set-link-modal-content">
+            <span class="set-link-modal-close">&times;</span>
+            <label for="set-link-source-dropdown">Source</label>
+            <select id="set-link-source-dropdown" class="set-link-modal-dropdown">
+                <option value="" disabled="" selected="">Select Source</option>
+            </select>
+            <label for="set-link-target-dropdown">Target</label>
+            <select id="set-link-target-dropdown" class="set-link-modal-dropdown">
+                <option value="" disabled="" selected="">Select Target</option>
+            </select>
+            <button class="set-link-modal-btn">Set link!</button>
+        </div>
+    </div>
+
+    <script src="/index.4de9b498.js" defer=""></script>
+</body>
+
+</html>

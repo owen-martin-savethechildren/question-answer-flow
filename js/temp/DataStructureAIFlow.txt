@@ -1,0 +1,22 @@
+Data Structure for AIFlow
+    Tables: 
+        Diagram:
+            string DiagramId
+            string UserId
+            string DiagramJSON
+            date   CreatedOn
+            date   ModifiedOn
+
+        AIData:
+            string     AIDataId
+            string     DiagramId
+            string     Tag
+            string     Topic
+            string     Command
+            string[]   Hook
+            string[]   Question/Pattern
+            string[]   Answer/Response
+            string     Fallback
+            string[][] keywords
+            date       CreatedOn
+            date       ModifiedOn

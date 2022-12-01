@@ -1,0 +1,169 @@
+@import "/css/lib/bootstrap/bootstrap.min.css";
+@import "/css/lib/jointjs/joint.core.min.css";
+@import "/css/lib/jointjs/joint.min.css";
+@import "/css/lib/font-awesome/font-awesome.all.min.css";
+
+.rf-qna-flow {
+    display: flex;
+    height: 95vh;
+}
+
+.rf-qna-flow-container {
+    flex: auto;
+    overflow: auto;
+}
+
+.rf-qna-flow-left-bar {
+    flex: 0 0 240px;
+    position: relative;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+}
+
+.rf-qna-flow-left-bar-toggler,
+.rf-qna-flow-right-bar-toggler {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 15px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.rf-qna-flow-left-bar-toggler {
+    right: 0;
+    box-shadow: 3px 0 5px rgb(0 0 0 / 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.rf-qna-flow-left-bar-toggler::after {
+    content: "\f104";
+}
+
+.rf-qna-flow-left-bar-toggler-collapsed > .rf-qna-flow-left-bar-toggler::after {
+    content: "\f105";
+}
+
+.rf-qna-flow-left-bar-content {
+    border: 1px solid #00000029;
+    flex: auto;
+}
+
+.rf-qna-flow-right-bar {
+    flex: 0 0 240px;
+    position: relative;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+}
+
+.rf-qna-flow-right-bar-toggler {
+    left: 0;
+    box-shadow: -3px 0 5px rgb(0 0 0 / 13%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.rf-qna-flow-right-bar-toggler::after {
+    content: "\f105";
+}
+
+.rf-qna-flow-right-bar-toggler-collapsed
+    > .rf-qna-flow-right-bar-toggler::after {
+    content: "\f104";
+}
+
+.rf-qna-flow-left-bar-toggler-collapsed {
+    flex: 0;
+    padding-left: 0;
+}
+
+.rf-qna-flow-right-bar-toggler-collapsed {
+    flex: 0;
+    padding-right: 0;
+}
+
+.rf-qna-flow-right-bar-content {
+    border-left: 1px solid #00000029;
+    flex: auto;
+}
+
+.element-container {
+    flex: auto;
+    height: 98vh;
+}
+
+.element-container .stencil {
+    flex: auto;
+    height: 90vh;
+}
+
+.rf-qna-flow-toolbar {
+    display: flex;
+    position: absolute;
+    left: 268px;
+    top: 50px;
+    z-index: 2;
+    background: none;
+    border: 1px solid black;
+    padding: 0;
+}
+
+/* The Modal (background) */
+.set-link-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.set-link-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.set-link-modal-close {
+    display: block;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: 200;
+}
+
+.set-link-modal-close:hover,
+.set-link-modal-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.set-link-modal-btn {
+    width: 15%;
+    margin: 10 0 10 0;
+}
+
+.set-link-modal-dropdown {
+    display: block;
+    width: 50%;
+}
